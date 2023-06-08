@@ -6,15 +6,53 @@ Matriz de confusión:
 Precisión: 1.0
 Recall: 0.95
 F1-score: 0.9743589743589743
+AUC-ROC: 0.9982142857142857
+Resultados de validación cruzada: [0.82352941 1.         1.         0.97058824 0.94117647]
+Precisión promedio de validación cruzada: 0.9470588235294117
+Informe de clasificación:
+              precision    recall  f1-score   support
+
+           0       0.93      1.00      0.97        14
+           1       1.00      0.95      0.97        20
+
+    accuracy                           0.97        34
+   macro avg       0.97      0.97      0.97        34
+weighted avg       0.97      0.97      0.97        34
+
 
 Interpretación:
 
-1. Precisión del modelo: La precisión se calcula dividiendo el número de predicciones correctas entre el número total de predicciones realizadas. En este caso, la precisión del modelo es de 0.9706, lo que indica que aproximadamente el 97.06% de las predicciones fueron correctas.
+1. Precisión del modelo: La precisión se calcula dividiendo el número de predicciones correctas 
+entre el número total de predicciones realizadas. En este caso, la precisión del modelo es de 0.9706, 
+lo que indica que aproximadamente el 97.06% de las predicciones fueron correctas.
 
-2. La matriz de confusión muestra la cantidad de predicciones correctas e incorrectas realizadas por el modelo. Está organizada en cuatro categorías: verdaderos positivos (TP), verdaderos negativos (TN), falsos positivos (FP) y falsos negativos (FN). La matriz muestra que el modelo hizo 14 predicciones correctas de la clase negativa (no divorcio) y 19 predicciones correctas de la clase positiva (divorcio). Hubo 0 falsos positivos y 1 falso negativo.
+2. La matriz de confusión muestra la cantidad de predicciones correctas e incorrectas realizadas 
+por el modelo. Está organizada en cuatro categorías: verdaderos positivos (TP), verdaderos negativos 
+(TN), falsos positivos (FP) y falsos negativos (FN). La matriz muestra que el modelo hizo 14 
+predicciones correctas de la clase negativa (no divorcio) y 19 predicciones correctas de la clase 
+positiva (divorcio). Hubo 0 falsos positivos y 1 falso negativo.
 
-3. Precisión: La precisión es la proporción de verdaderos positivos sobre el total de predicciones positivas realizadas por el modelo. En este caso, la precisión es de 1.0, lo que indica que todas las predicciones positivas hechas por el modelo fueron correctas.
+3. Precisión: La precisión es la proporción de verdaderos positivos sobre el total de predicciones 
+positivas realizadas por el modelo. En este caso, la precisión es de 1.0, lo que indica que todas las 
+predicciones positivas hechas por el modelo fueron correctas.
 
-4. Recall (sensibilidad): El recall se calcula dividiendo los verdaderos positivos entre el total de casos positivos reales. En este caso, el recall es de 0.95, lo que indica que el modelo identificó correctamente el 95% de los casos positivos reales.
+4. Recall (sensibilidad): El recall se calcula dividiendo los verdaderos positivos entre el total de 
+casos positivos reales. En este caso, el recall es de 0.95, lo que indica que el modelo identificó 
+correctamente el 95% de los casos positivos reales.
 
-5. F1-score: El F1-score es una medida que combina la precisión y el recall en un solo valor. Es útil cuando hay un desequilibrio entre las clases. En este caso, el F1-score es de 0.9744, lo que indica un buen equilibrio entre precisión y recall.
+5. F1-score: El F1-score es una medida que combina la precisión y el recall en un solo valor. Es 
+útil cuando hay un desequilibrio entre las clases. En este caso, el F1-score es de 0.9744, lo que 
+indica un buen equilibrio entre precisión y recall.
+
+6. AUC-ROC: El AUC-ROC es una métrica que cuantifica la capacidad de discriminación del modelo. 
+En este caso, el AUC-ROC es del 99.82%, lo que indica que el modelo tiene un alto poder para 
+distinguir entre las clases positiva y negativa.
+
+7. Resultados de validación cruzada: La validación cruzada proporciona una estimación del rendimiento 
+del modelo en diferentes divisiones de los datos. En este caso, los resultados de validación cruzada 
+muestran una precisión promedio del 94.71%, lo que indica que el modelo tiene un buen rendimiento en 
+general.
+
+8. Informe de clasificación: El informe de clasificación muestra las métricas de precisión, recall, 
+F1-score y soporte para cada clase en el conjunto de prueba. En general, el modelo muestra un rendimiento 
+muy similar en ambas clases, con altos valores de precisión, recall y F1-score.
