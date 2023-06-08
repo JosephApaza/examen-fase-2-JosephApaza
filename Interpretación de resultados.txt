@@ -1,0 +1,20 @@
+Resultados:
+Precisión del modelo: 0.9705882352941176
+Matriz de confusión:
+[[14  0]
+ [ 1 19]]
+Precisión: 1.0
+Recall: 0.95
+F1-score: 0.9743589743589743
+
+Interpretación:
+
+1. Precisión del modelo: La precisión se calcula dividiendo el número de predicciones correctas entre el número total de predicciones realizadas. En este caso, la precisión del modelo es de 0.9706, lo que indica que aproximadamente el 97.06% de las predicciones fueron correctas.
+
+2. La matriz de confusión muestra la cantidad de predicciones correctas e incorrectas realizadas por el modelo. Está organizada en cuatro categorías: verdaderos positivos (TP), verdaderos negativos (TN), falsos positivos (FP) y falsos negativos (FN). La matriz muestra que el modelo hizo 14 predicciones correctas de la clase negativa (no divorcio) y 19 predicciones correctas de la clase positiva (divorcio). Hubo 0 falsos positivos y 1 falso negativo.
+
+3. Precisión: La precisión es la proporción de verdaderos positivos sobre el total de predicciones positivas realizadas por el modelo. En este caso, la precisión es de 1.0, lo que indica que todas las predicciones positivas hechas por el modelo fueron correctas.
+
+4. Recall (sensibilidad): El recall se calcula dividiendo los verdaderos positivos entre el total de casos positivos reales. En este caso, el recall es de 0.95, lo que indica que el modelo identificó correctamente el 95% de los casos positivos reales.
+
+5. F1-score: El F1-score es una medida que combina la precisión y el recall en un solo valor. Es útil cuando hay un desequilibrio entre las clases. En este caso, el F1-score es de 0.9744, lo que indica un buen equilibrio entre precisión y recall.
